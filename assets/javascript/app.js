@@ -40,12 +40,13 @@ var question8choices = ["a: Durian", "b: Guava", "c: Mangosteen", "d: Papaya"];
 var question9choices = ["a: Date", "b: Guava", "c: Plum", "d: Papaya"];
 var question10choices = ["a: Fig", "b: Apple", "c: Dragonfruit", "d: Orange"];
 //Create buttons for each answer choice in the array
-function createButtons1() {
-    for (var i=0; i < question1choices.length; i++) {
-        document.getElementById("choices").innerHTML = "<button>" + question1choices[i] + "</button>";
-    }
-}
 
+
+
+
+for (var i=0; i < question1choices.length; i++) {
+$("#choices").append("<button>" + question1choices[i] + "</button>");
+}
 createButtons1();
 //Create for loop for if/else statements regarding user choice
     //If userchoice matches the answer then "you win", else "you lose".
